@@ -278,7 +278,7 @@ button[type="submit"] {
   }
 
   .navigation-menu {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: #EEE9E5;
     top: 75px;
