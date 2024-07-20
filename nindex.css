@@ -8,10 +8,10 @@ html {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat","Poppins", sans-serif;
 }
 h1{
-  
+  font-size: 20px;
   font-family: "Montserrat","Poppins", sans-serif;
   font-weight: 350;
   text-transform: uppercase;
@@ -313,6 +313,7 @@ h2 {
   text-transform: uppercase;
   font-size: x-large;
   letter-spacing: 2px;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 700px) {
