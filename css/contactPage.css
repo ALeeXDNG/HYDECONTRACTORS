@@ -273,7 +273,7 @@ button[type="submit"] {
     position: relative;
     right: 1rem;
   }
-  header img {
+  header img { 
     margin-left: 1rem;
   }
 
@@ -392,7 +392,12 @@ button[type="submit"] {
 
 
 @media screen and (max-width: 700px) {
-
+  body {
+    width: 100%;
+    background-image: url(../assets/Images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg);
+    background-attachment: fixed;
+    filter: brightness(0.88);
+  }
 
 .form-container{
     display: flex;
@@ -409,52 +414,69 @@ h1 {
     font-size: 24px;
     color: #f5f4f4;
     text-align: center;
-    margin: 10px;
+
 }
 
-p {
-    margin: 10px;
-    font-size: 16px;
+.heading-section p  {background-color: #fffffff0;
+  border: solid 0.1px #4b4747;
+  border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 2rem;
+    font-size: 12px;
     color: #000000;
     text-align: center;
-    margin-bottom: 4    0px;
+    text-align: start;
+    padding-left: 10px;
+
 }
 
 #contact-form {
+ display: block;
     width: 90%;
+    height: 60vh;
     margin: 0 auto;
     padding: 20px;
     background-color: #f2f2f2;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+    margin-bottom: 5px;
+    margin: 8px;
+    padding: 8px;
 }
 
 .form-group label {
+ 
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     color: #333333;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
+  
     width: 80%;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .form-group textarea {
-    height: 100px;
+    height: 50px;
     resize: none;
 }
 
 button[type="submit"] {
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  40px;
+    width: 40%;
     padding: 10px;
     background: #BC996F;
     color: #fff;
@@ -462,6 +484,7 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 
