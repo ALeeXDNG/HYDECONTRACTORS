@@ -10,6 +10,9 @@ html {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
+.onlyformobile{
+  display: none;
+}
 .textedit h1{
   font-size: 20px;
   font-family: "Montserrat","Poppins", sans-serif;
@@ -392,49 +395,59 @@ button[type="submit"] {
 
 
 @media screen and (max-width: 700px) {
+  .onlyformobile{
+    font-family: "Montserrat","Poppins", sans-serif;
+    font-weight: 350;
+    font-size: x-large;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   body {
     width: 100%;
     background-image: url(../assets/Images/image-engineering-objects-workplace-top-view-construction-concept-engineering-tools-vintage-tone-retro-filter-effect-soft-focus-selective-focus.jpg);
     background-attachment: fixed;
     filter: brightness(0.88);
   }
-
+.heading-section{
+ display: none;
+}
 .form-container{
+  
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: none;
 }
 .contact-section{
-    width: 90%;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-backdrop-filter:none;
+    background-color: none;
+    background-color: rgba(221, 0, 0, 0);
 
-
-}
+  }
 h1 {
     font-size: 24px;
     color: #f5f4f4;
     text-align: center;
+    
 
 }
 
-.heading-section p  {background-color: #fffffff0;
-  border: solid 0.1px #4b4747;
-  border-radius: 7px;
-    padding: 5px;
-    margin-bottom: 2rem;
-    font-size: 12px;
-    color: #000000;
-    text-align: center;
-    text-align: start;
-    padding-left: 10px;
+.heading-section p  {
+ 
+    display: none;
 
 }
+
 
 #contact-form {
  display: block;
-    width: 90%;
-    height: 60vh;
-    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 4px;
@@ -447,7 +460,9 @@ h1 {
     margin: 8px;
     padding: 8px;
 }
-
+.form-group p{
+  display: none;
+}
 .form-group label {
  
     display: block;
