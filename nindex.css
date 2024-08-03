@@ -16,6 +16,25 @@ h1{
   font-weight: 350;
   text-transform: uppercase;
 }
+
+.pop-up-text {
+  font-size: 2em;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: popUp 1.5s ease-out forwards;
+}
+
+@keyframes popUp {
+  0% {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
 h1 span{
   color: #BC996F;
 }
@@ -120,7 +139,7 @@ a.aj_btn:hover {
 }
 
 .black-layer {
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   width: 100%;
 }
 
@@ -187,9 +206,9 @@ a.aj_btn:hover {
     display: block;
   }
 
-  .black-layer {
-    background: rgba(0, 0, 0, 0.65);
-  }
+  /* .black-layer {
+    background-color: rgba(0, 0, 0, 0.65);
+  } */
 }
 
 .btn {
@@ -331,9 +350,7 @@ h2 {
   .welcome {
     top: 25%;
   }
-  .black-layer h1 {
-    padding: 2rem 2rem 1rem 2rem;
-    text-align: center;
+
   }
   .black-layer p {
     font-size: 18px;
@@ -346,4 +363,12 @@ h2 {
   a#scroll-btn:after {
     font-size: 1em;
   }
+.welcome{
+  margin-top: 40vh;
+
+
+}
+.welcome h1{
+  padding-left: 40px;
+  border-color: #BC996F;
 }

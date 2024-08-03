@@ -43,3 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const target = document.querySelector('.demolitionText');
   observer.observe(target);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const popUpText = document.querySelector('.pop-up-text');
+  popUpText.classList.add('active');
+});
