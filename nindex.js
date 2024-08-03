@@ -23,3 +23,23 @@ $(".load-more").on("click", function() {
     }, 2000);
   }
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, observerOptions);
+
+  const target = document.querySelector('.demolitionText');
+  observer.observe(target);
+});

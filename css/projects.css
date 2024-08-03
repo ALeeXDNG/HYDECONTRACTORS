@@ -251,6 +251,9 @@ padding: 10%;
 margin-bottom: 5%;
 
 
+
+
+
 }
 .card-container {
   z-index: 100;
@@ -265,7 +268,6 @@ margin-bottom: 5%;
 /* Card styles */
 
 .card {
-  margin: 1%;
   position: relative;
   height: 50vh;
   width: 50%;
@@ -286,9 +288,6 @@ margin-bottom: 5%;
   z-index: -1;
 }
 
-.card-1::before {
-  background-image: url("../assets/Images/f8c0a60939f4ba0b57dd27cd94f2463c.jpg");
-}
 
 .card-2::before {
   background-image: url("../assets/Images/bigstock-A-Builder-Standing-On-A-Ladder-343227319.jpg");
@@ -472,6 +471,57 @@ left: 10%;
     }
 
 
+
+
+    /*                    trades containers                   */
+
+    h3{
+      margin-left: 6%;
+      padding-left: 10px;
+    }
+    .demolitionText {
+      width: 100%;
+      background-color: #303d40;
+      height: 50vh;
+      color: #ece9e4;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .demolitionContainer:hover .demolitionText p {
+      transform: translateX(0);
+    }
+    
+    .demolitionText h3, .demolitionText p {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    
+    .demolitionContainer:hover .demolitionText h3,
+    .demolitionContainer:hover .demolitionText p {
+      opacity: 1;
+    }
+    .demolitionText p {
+      transform: translateX(100%);
+      padding-top: 20px;
+      margin-left: 6%;
+      padding-left: 10px; 
+      padding-right: 2%;
+      width: 80%;
+    }
+    .demolitionContainer{
+      
+      display: flex;
+      flex-direction: row;
+    }
+    .card-1 {
+      background-image: url("https://www.renshawcivil.co.nz/wp-content/uploads/2024/01/s2-1-980x654.jpg");
+      background-repeat: no-repeat;
+      width: 70%;
+      height: 50vh;
+    }
 
 
       /********                 Responsive styles            ********/
