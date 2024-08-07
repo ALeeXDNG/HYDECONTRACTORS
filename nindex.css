@@ -159,6 +159,47 @@ a.aj_btn:hover {
   margin-left: 10.5rem;
   color: #fff;
 }
+ .textcontainer {
+  font-family: Arial, sans-serif;
+ 
+    margin: 10rem;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: #484848;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+        
+        }
+        .textcontainer h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .textcontainer p {
+            margin-bottom: 20px;
+        }
+        .textcontainer .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .textcontainer .stats div {
+            text-align: center;
+        }
+        /* .textcontainer img{
+          width: 80vh;
+        } */
+        .textcontainer .stats div span {
+          font-family:  Helvetica, Arial, sans-serif;
+         color: #BC996F;
+            display: block;
+            font-size: 30px;
+            font-weight: bold;
+            font-weight: 150;
+        }
 
 @media screen and (max-width: 1325px) {
   .menu-toggle-btn {
@@ -340,7 +381,14 @@ h2 {
 }
 
 @media screen and (max-width: 700px) {
+  .textcontainer {
+   
+    margin: 35px;
+    max-width: 600px;
+  }
+
   .illustration-container img {
+    
     margin: 0.5rem;
     width: 20vh;
     height: 20vh;
@@ -350,7 +398,25 @@ h2 {
   .welcome {
     top: 25%;
   }
+  .illustration{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 
+    width: 170px;
+    font-size: 15px;
+   
+  } 
+  .illustration img{
+    box-shadow: none;
+    width: 130px;
+    height: 130px;
+  }
+  .illustration .step-description{
+    margin: 2%;
+    padding: 9px;
+ 
+  }
   }
   .black-layer p {
     font-size: 18px;
@@ -367,6 +433,15 @@ h2 {
   margin-top: 40vh;
 
 
+
+}
+h2{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 60px;
+  
 }
 .welcome h1{
   padding-left: 40px;
