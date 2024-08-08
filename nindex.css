@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 * {
+
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -384,8 +385,42 @@ h2 {
   .textcontainer {
    
     margin: 35px;
+    margin-right: -10px;
     max-width: 600px;
+    padding-left: 10%;
+    padding-top: 10%;
   }
+
+
+  .second-section img{
+margin-bottom: 20px;
+border-radius: 10px;
+
+  }
+  .first {
+    position: relative;
+    width: 28vh; /* Smaller width */
+    z-index: 1;
+    overflow: hidden;
+    bottom: 185px; /* Placed lower */
+    left: 20px;
+    background-color: lightblue;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.second {
+  overflow: hidden;
+    width: 50vh;
+  
+}
+.second-section{
+  overflow: hidden;
+}
+.firstimg{
+
+  margin-left: -140px;
+}
 
   .illustration-container img {
     
