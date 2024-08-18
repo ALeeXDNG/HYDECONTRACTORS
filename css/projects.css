@@ -32,8 +32,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    overflow:hidden;
   }
-  
+
+
+.header.hidden {
+    top: -100px; /* Moves the header off the screen when hidden */
+}
   .inner-width {
     max-width: 1400px;
     padding: 0 10px;
@@ -524,6 +530,285 @@ left: 10%;
     }
 
 
+
+                              /* project container  */
+/* Project Container */
+.project-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: "Montserrat";
+  border-radius: 10px;
+
+  padding: 20px;
+  position: relative;
+
+}
+
+.project-content {
+
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.content{
+
+}
+.text-content {
+  width: 60%;
+  margin:0;
+  padding-right: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  order: 1;
+}
+
+.image-content {
+  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  text-align: center;
+  order: 2;
+  margin-left: 10%;
+  height: 50%;
+}
+
+.text-content .head{
+  font-family: 'Montserrat', sans-serif; /* Sets the font to Montserrat */
+    font-weight: 300; /* Sets the weight to light (300) */
+    color: #232321;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+
+.text-content .location,
+.text-content .duration {
+  font-size: 13px;
+  margin: 5px 0;
+  font-size: 1.2em;
+
+}
+
+.text-content .description {
+  margin: 15px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #232321;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbnail-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.thumbnail-section img {
+  width: 30%;
+  border-radius: 5px;
+}
+
+.arrow {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+/* Blurred Background */
+.container .carousel-container .carousel-item .section1 .blurred-background {
+ z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.container .carousel-container .carousel-item  .blurred-background  .background {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  object-position: center; /* Adjusts the part of the image shown, can use 'top', 'left', 'right', 'bottom' or percentages */
+  
+}
+/* Overlay for the blur effect */
+
+
+/* Content that appears above the blur */
+.content {
+  position: relative;
+  color: #000; /* Adjust text color based on background */
+  padding: 30px; /* Add padding if needed */
+}
+
+
+                          /* carousel  */
+
+                          .carousel-item > div {
+                            height: 400px;
+                            line-height: 500px;
+                            font-size: 1.5em;
+                            text-align: center;
+                            color: #fff;
+                        }
+
+                        
+                        /* Carousel */
+                        
+                        .carousel {
+                            position: relative;
+                            overflow: hidden;
+                            width: 100%;
+                        }
+                        
+                        .carousel-container {
+                            list-style: none;
+                            overflow: hidden;
+                            padding: 0;
+                            margin: 0;
+                            width: 500%;
+                            transition: transform 0.3s cubic-bezier(.694, .0482, .335, 1);
+                        }
+                        
+                        .carousel-item {
+                            position: relative;
+                            float: left;
+                            width: 20%;
+                        }
+                        
+                        /* Next / Prev Buttons */
+                        
+                        .container .carousel .carousel-prev,
+                        .container .carousel .carousel-next {
+                          z-index: 100;
+                            position: absolute;
+                            top: 67%;
+  
+                            opacity: 0.7;
+                            border-radius: 50%;
+                            color: #fff;
+                            font-size: 1em;
+                            cursor: pointer;
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            -webkit-transform: translate(0, -50%);
+                            transform: translate(0, -50%);
+                            text-align: center;
+                            z-index: 10;
+                            transition: opacity 0.3s ease;
+                        }
+                        
+                        .carousel-prev {
+                            left: 2%;
+                            padding-right: 3px;
+                        }
+                        
+                        .carousel-prev::before {
+                          content: '\f104'; /* Unicode for light left arrow */
+                          font-family: "FontAwesome";
+                          font-weight: 100; /* This uses a lighter font weight */
+                          font-size: 40px;
+                            
+                        }
+                        
+                        .carousel-next {
+                            right: 2%;
+                            padding-left: 3px;
+                        }
+                        
+                        .carousel-next::before {
+                          content: '\f105'; /* Unicode for light left arrow */
+                          font-family: "FontAwesome";
+                          font-weight: 100; /* This uses a lighter font weight */
+                          font-size: 40px;
+                        }
+                        
+                        .carousel-prev:hover,
+                        .carousel-next:hover {
+                            opacity: 1;
+                        }
+                        
+                        /* Pagination */
+                        
+                        .carousel-pagination {
+                            list-style: none;
+                            position: absolute;
+                            bottom: 3%;
+                            left: 0;
+                            right: 0;
+                            width: 50%;
+                            padding: 0;
+                            margin: 0 auto;
+                            text-align: center;
+                            z-index: 10;
+                        }
+                        
+                        .carousel-bullet {
+                            display: inline-block;
+                            width: 12px;
+                            height: 12px;
+                            background-color: #000;
+                            cursor: pointer;
+                            margin: 0 7px;
+                            border-radius: 50%;
+                            opacity: 0.5;
+                            transition-property: transform, opacity, background-color;
+                            transition-duration: 0.3s;
+                        }
+                        
+                        .carousel-bullet:hover {
+                            -webkit-transform: scale(1.3);
+                            transform: scale(1.3);
+                        }
+                        
+                        .carousel-bullet.active-bullet, 
+                        .carousel-bullet.active-bullet:hover {
+                            opacity: 1;
+                            -webkit-transform: scale(1.3);
+                            transform: scale(1.3);
+                            background-color: #fff;
+                            cursor: default;
+                        }
+                        
+
+
+
+
       /********                 Responsive styles            ********/
 
 
@@ -532,7 +817,7 @@ left: 10%;
 
 
 
-@media screen and (max-width: 1325px) {
+                              @media screen and (max-width: 1325px) {
     /* **** ON Ipad navigation menu  ****** */
 
     /* ****** Main Page ******* */
@@ -599,7 +884,7 @@ left: 10%;
   
   
   
-  @media screen and (max-width: 700px) {
+                        @media screen and (max-width: 700px) {
   
   
     .container h2 {
@@ -637,8 +922,118 @@ left: 10%;
         }
     }
   
+                /* project container  */
+                .container {
+                  
+                  padding: 0;
+                height: 100vh;
+                }
+
+                .project-container {
+                  
+                  flex-direction: column-reverse;
+                  padding: 10px;
+                  box-shadow: none;
+                  
+              }
+          
+              .project-content {
+               
+                  display: block;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+              
+              }
+          
+              .text-content, .image-content {
+            
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+    
+                  text-align: center;
+              }
+              .text-content {
+                color: #232321;
+              }
+              .text-content {
+                  order: 2 !important;
+              }
+          
+              .image-content {
+                margin: 0;
+                  order: 1 !important;
+              }
+              
+              .arrow {
+                  display: none;
+              }
+              .text-content{
+                font-weight: 400;
+              }
+              .text-content .head{ 
+                margin-top: 30px;
+                margin-left: 0;
+                padding-left: 0;
+                display: flex;
+                flex-direction: row;
   
-  
+                font-family: 'Montserrat', sans-serif; /* Sets the font to Montserrat */
+                  font-weight: 300; /* Sets the weight to light (300) */
+                  color: #232321;
+                  font-size: 20px;
+                  padding: 10px;
+              }
+              
+              .text-content .duration{
+              
+                width: 100px;
+                border-left: solid 1px black;
+               
+                padding-left: 20px;
+                margin-left:20px ;
+                font-size: 15px;
+              }
+              
+              .text-content .location
+             {
+                display: flex;
+                font-size: 13px;
+                padding-left: 10px;
+                
+          
+              
+              }
+              .text-content .description{
+                font-size: 15px;
+                width: 100%;
+                display: flex;
+                text-align: left;
+                
+              }
+              .text-content .read-more{
+                font-size: 15px;
+                width: 100px;
+                display: flex;
+                text-align: left;
+                font-weight: 400;
+                text-decoration: underline;
+              }
+              
+              .carousel-bullet {
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                background-color: #000;
+                cursor: pointer;
+                margin: 0 7px;
+                border-radius: 50%;
+                opacity: 0.5;
+                transition-property: transform, opacity, background-color;
+                transition-duration: 0.3s;
+            }
+
   }
   
 
