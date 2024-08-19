@@ -64,7 +64,7 @@
     float: right;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    justify-content: space-evenly;
     margin-right: 1rem;
   }
   
@@ -75,6 +75,7 @@
     padding: 12px 20px;
     border-radius: 8px;
     transition: 0.3s linear;
+    margin-left: 5px;
   }
   
   .navigation-menu a:hover {
