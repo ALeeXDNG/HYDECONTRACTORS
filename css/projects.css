@@ -936,7 +936,9 @@ left: 10%;
                   box-shadow: none;
                   
               }
-          
+              .image-content{
+                box-shadow: none;
+              }
               .project-content {
                
                   display: block;
@@ -949,7 +951,7 @@ left: 10%;
               .text-content, .image-content {
             
                   width: 100%;
-                  padding: 0;
+                  padding-top: 30px;
                   margin: 0;
     
                   text-align: center;
