@@ -92,21 +92,11 @@ h1 span{
 
 
 
-.first {
-  height: 100vh;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Vertically center content */
-  flex-direction: column; /* Stack content vertically */
-}
-
-.imagecontent {
-  width: 100%;
-  height: 61vh; /* Increase the height to make images larger */
-  position: relative;
-  overflow: hidden; /* Ensures any overflow is cropped */
+.first{
+  height: 70vh;
+  background-image: url(../assets/video/Untitled\ design.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -116,22 +106,6 @@ h1 span{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.first .imagecontent img .screws0{
-  display: none  ;
-}
 
 
 
@@ -142,22 +116,14 @@ h1 span{
 @media screen and (max-width: 1325px) {
 
 
-
-
-
-
-
-
-
-
-
- .newimage{
-  display: block !important ;
+.first{
+  height: 70vh;
+  background-image: url(../assets/video/Untitled\ design.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.screws ,.fire{
-  display: none !important;
-  
-}
+
+
 
 
 
