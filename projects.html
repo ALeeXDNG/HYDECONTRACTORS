@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
     <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
       charset="utf-8"
@@ -25,27 +26,43 @@
   <body>
     <div class="divmain">
       <header>
-        <div class="logo">
-          <img src="./assets/Logo/limited no name written.svg" />
-         <div class="textedit"> <h1>Hyde <span>contractors</span></h1></div>
-        </div>
+        <!-- <div class="logo">
+        
+          <h1>Hyde <span>contractors</span></h1>
+        </div> -->
         <div class="inner-width">
-          <i class="menu-toggle-btn fas fa-bars"></i>2
+         
+          
+         
+          <i class="menu-toggle-btn "><svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg></i>
+          <img src="./assets/Logo/limited.svg" />
           <nav class="navigation-menu">
-            <a href="index.html"><i class="fas fa-home home"></i> Home</a>
-            <a href="trades.html"><i class="fas fa-briefcase"></i> Trades</a>
-            <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+         
+            <a href="index.html" ><i class="fas fa-home home"></i> Home </a>
+            <a href="trades.html"><i class="fas fa-briefcase"></i> Trades </a>
+            <a href="projects.html" style="   color: #BC996F;"><i class="fas fa-project-diagram"></i> Projects</a>
             <a href="#"><i class="fas fa-building"></i> Company</a>
             <a href="contactPage.html"><i class="fas fa-envelope"></i> Contact</a>
             <a href="#" class="aj_btn"
-              ><i class="fas fa-lock" aria-hidden="true"></i> Company Portal</a
+              ><i class="fas fa-lock" aria-hidden="true" style="display: inline-block;  padding-left: 10px;"></i> Company Portal</a
             >
-            <div class="iconsmenu" style="display: flex; text-align: center; justify-content:space-between; margin: 20px; margin-top: 30px; ">
-            <a href="">  <i class="fa fa-whatsapp" style="font-size:36px"></i></a>
-              <a href="https://www.instagram.com/hyde.contractors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa fa-instagram" style="font-size:36px"></i></a>
-              <a href=""><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
-              <a href=""></a><i class="fa fa-telegram" style="font-size:36px"></i>
+            <div class="socialicons">
+              <i class="fa fa-whatsapp" style="font-size:36px"></i>
+              <i class="fa fa-instagram" style="font-size:36px"></i>
+              <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+              <i class="fa fa-telegram" style="font-size:36px"></i>
             </div>
+          
           </nav>
         </div>
       </header>

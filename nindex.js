@@ -1,3 +1,14 @@
+window.addEventListener('scroll', function() {
+  const footer = document.querySelector('footer');
+  const scrollY = window.scrollY;
+  const triggerHeight = 2200; // Adjust as needed
+
+  if (scrollY > triggerHeight) {
+      footer.classList.add('show');
+  } else {
+      footer.classList.remove('show');
+  }
+});
 // Toggle menu button
 $(".menu-toggle-btn").click(function () {
   $(this).toggleClass("fa-times");
@@ -92,3 +103,22 @@ document.addEventListener('DOMContentLoaded', function () {
                                           slideTo(index);
                                       }
                                   }, false);
+
+
+                                  // footer
+                                  window.addEventListener('scroll', function() {
+                                    const footer = document.getElementById('footer');
+                                    const scrollY = window.scrollY; // No need for pageYOffset fallback
+                                    const triggerHeight = 100; // Adjust this value to your desired trigger height
+                                
+                                    if (scrollY > triggerHeight) {
+                                        footer.classList.add('show');
+                                    } else {
+                                        footer.classList.remove('show');
+                                    }
+                                });
+                                window.addEventListener('scroll', function() {
+                                  const scrollY = window.scrollY; // Get the current scroll position
+                              
+                                  console.log('Current scroll position:', scrollY);});
+                                  console.log('Scroll position:');

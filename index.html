@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HideGroup - Construction and Building Services</title>
     <link rel="stylesheet" href="./nindex.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
       charset="utf-8"
@@ -24,22 +25,37 @@
     <div class="main container">
     <section class="first-sec" id="sec-1">
       <header>
-        <div class="logo">
-          <img src="./assets/Logo/limited no name written.svg" />
+        <!-- <div class="logo">
+        
           <h1>Hyde <span>contractors</span></h1>
-        </div>
+        </div> -->
         <div class="inner-width">
-          <i class="menu-toggle-btn fas fa-bars"></i>
+         
+          
+         
+          <i class="menu-toggle-btn "><svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+          </svg></i>
+          <img src="./assets/Logo/limited.svg" />
           <nav class="navigation-menu">
-            <a href="index.html"><i class="fas fa-home home"></i> Home</a>
+         
+            <a href="index.html" style="   color: #BC996F;"><i class="fas fa-home home"></i> Home </a>
             <a href="trades.html"><i class="fas fa-briefcase"></i> Trades </a>
             <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
             <a href="#"><i class="fas fa-building"></i> Company</a>
             <a href="contactPage.html"><i class="fas fa-envelope"></i> Contact</a>
             <a href="#" class="aj_btn"
-              ><i class="fas fa-lock" aria-hidden="true"></i> Company Portal</a
+              ><i class="fas fa-lock" aria-hidden="true" style="display: inline-block;  padding-left: 10px;"></i> Company Portal</a
             >
-            <div class="iconsmenu" style="display: flex; text-align: center; justify-content:space-between; margin: 20px; margin-top: 30px; ">
+            <div class="socialicons">
               <i class="fa fa-whatsapp" style="font-size:36px"></i>
               <i class="fa fa-instagram" style="font-size:36px"></i>
               <i class="fa fa-linkedin-square" style="font-size:36px"></i>
@@ -53,7 +69,7 @@
       <div class="welcome">
         <div class="black-layer">
           <h1>Building Our Future Together</h1>
-          <hr />
+          <hr class="underline" />
           <!-- <p>
             Crafting Excellence, Trusted Reliability. Your blueprint for
             Superior Quality construction across Europe.<br />
@@ -62,27 +78,62 @@
         </div>
       </div>
     </div>
-      <a id="scroll-btn" href="#illustrations"></a>
+    
     </section> 
-    <section class="second-section">
-      <!-- <div class="firstimg">  <img class="first" src="./assets/Images/pexels-krislucas90-3385662.jpg" alt=""  ></div> -->
 
-   </section>
-   <section class="second-section">
+
+    
+   <section class="project-section">
+    <div class="gallery">
+      <div class="project1"><img src="https://pinnacleinfotech.com/wp-content/uploads/2022/09/new-childrens-hospital.jpg" alt=""></div>
+      <div class="project3"><img src="https://static1.squarespace.com/static/5ab577a645776e9177108f75/5abff3be1ae6cf734d7148f1/5f9d6ae10991472cc5073909/1715021673536/Metal-Stud-Framing.jpg?format=1500w" alt=""></div>
+      <div class="project2"><img src="./assets/testImages/mainPhoto.jpg" alt=""></div>
+      <div class="project4"><img src="./assets/Images/pexels-heyho-6238608.jpg" alt=""></div>
+    </div>
+    <div class="subheading">
+
+
+    </div>
+
+    </section>
+
+    <section class="second-section">
       <div class="textcontainer">
-        <img class="second" src="./assets/Images/pexels-expect-best-79873-323772.jpg" alt="">
-        <p>Our history and reputation has been built by undertaking projects that deliver the best outcomes for our stakeholders, clients, design teams, contracting partners, suppliers, and employees. We understand that with every construction project the key to success is forming strong relationships, providing flexible and value-based solutions and ensuring that our promises are kept.</p>
+        <img class="second" src="./assets/Images/header_ce431033-a678-4d5f-971f-6eb72417cb51-1080x675-1 copy-2.jpg" alt="">
+        <div class="paragraf"> 
+          <p class="aboutus">ABOUT US</p> 
+           <br/> 
+            Our history and reputation has been built by undertaking projects that deliver the best outcomes for our stakeholders, clients, design teams, contracting partners, suppliers, and employees. We understand that with every construction project the key to success is forming strong relationships, providing flexible and value-based solutions and ensuring that our promises are kept. 
+      
+            
+            <a href="#">
+              <div class="button-fill orange">
+                <div class="button-text">Learn More</div>
+                <div class="button-inside">
+                  <div class="inside-text">Learn&#160;More</div>
+                </div>
+              </div>
+            </a>
+             
+           
+    </div>
+            
+        
         <div class="stats">
-            <div>
+            <div >
                 <span>150+</span>
                 Employees
             </div>
+            <div>
+              <span>150+</span>
+              Employees
+          </div>
             <div>
                 <span>50+</span>
                 Projects per Year
             </div>
         </div>
-    </div>
+  </div>
 
     </section>
       <!--<button class="btn">Contact Us</button>-->
@@ -109,7 +160,41 @@
       </div>
     </section>
     
-  
+    <section class="lastsection">
+      <h1>hello</h1>
+      <div id="section1" class="content">Section 1</div>
+    <div id="section2" class="content">Section 2</div>
+    <div id="section3" class="content">Section 3</div>
+    </section>
+    </div>
+    <footer id="footer">
+  <div class="col col1">
+    <h3>CoolSite</h3>
+    <p>Made with <span style="color: #BA6573;">❤</span> by Jux</p>
+    <div class="social">
+      <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+      <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+      <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+    </div>
+    <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+  </div>
+  <div class="col col2">
+    <p>About</p>
+    <p>Our mission</p>
+    <p>Privacy Policy</p>
+    <p>Terms of service</p>
+  </div>
+  <div class="col col3">
+    <p>Services</p>
+    <p>Products</p>
+    <p>Join our team</p>
+    <p>Partner with us</p>
+  </div>
+  <div class="backdrop"></div>
+</footer>
+<script src="./javascript/button_learn_more.js"></script>
     <script src="./nindex.js"></script>
+    <script src="./javascript/menu.js" ></script>
+
   </body>
 </html>

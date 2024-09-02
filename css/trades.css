@@ -38,90 +38,7 @@ h1{
 h1 span{
   color: #BC996F;
 }
-header {
-  height: 65px;
-  background: rgba(0, 0, 0, 0.964);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.inner-width {
-  max-width: 1400px;
-  padding: 0 10px;
-  display: flex;
-  align-items: center;
-}
-
-header img {
-  height: 55px;
-  margin-left: 2rem;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  color: #fff;
-}
-
-.navigation-menu {
-  float: right;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-right: 1rem;
-}
-
-.navigation-menu a {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 12px 20px;
-  border-radius: 8px;
-  transition: 0.3s linear;
-  margin-left: 5px;
-}
-
-.navigation-menu a:hover {
-  background: #BC996F;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-.navigation-menu i {
-  margin-right: 8px;
-  font-size: 16px;
-}
-
-.home {
-  color: #fff;
-}
-
-a.aj_btn {
-  background: #BC996F;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-a.aj_btn:hover {
-  background: #fff;
-  color: #BC996F;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-.menu-toggle-btn {
-  float: right;
-  height: 75px;
-  line-height: 75px !important;
-  color: #fff;
-  font-size: 26px;
-  display: none !important;
-  cursor: pointer;
-}
 
 .first{
     border-color: #fff;
@@ -175,6 +92,22 @@ a.aj_btn:hover {
 
 
 
+.first {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center content */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.imagecontent {
+  width: 100%;
+  height: 61vh; /* Increase the height to make images larger */
+  position: relative;
+  overflow: hidden; /* Ensures any overflow is cropped */
+}
 
 
 
@@ -196,9 +129,9 @@ a.aj_btn:hover {
 
 
 
-
-
-
+.first .imagecontent img .screws0{
+  display: none  ;
+}
 
 
 
@@ -207,75 +140,29 @@ a.aj_btn:hover {
 
 
 @media screen and (max-width: 1325px) {
-    .menu-toggle-btn {
-      display: block !important;
-      position: relative;
-      right: 1rem;
-    }
-    header img {
-      margin-left: 1rem;
-    }
+
+
+
+
+
+
+
+
+
+
+
+ .newimage{
+  display: block !important ;
+}
+.screws ,.fire{
+  display: none !important;
   
-    .navigation-menu {
-      position: absolute;
-      width: 100%;
-      background: #EEE9E5;
-      top: 75px;
-      right: 0;
-      display: none;
-      padding: 20px 40px;
-      box-sizing: border-box;
-      margin-right: 0;
-      z-index: 1;
-    }
-  
-    .navigation-menu::before {
-      content: "";
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid #EEE9E5;
-      position: absolute;
-      top: -10px;
-      right: 25px;
-    }
-  
-    .navigation-menu a {
-      display: block;
-      margin: 10px 0;
-      color: black;
-    }
-    .fas.fa-home {
-      color: black; /* or any color you prefer */
-  }
-  
-    .navigation-menu.active {
-      display: block;
-    }
-  
-    /* .black-layer {
-      background-color: rgba(0, 0, 0, 0.65);
-    } */
-  }
-  
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -287,49 +174,11 @@ a.aj_btn:hover {
 
 
   @media screen and (max-width: 700px) {
-    .first {
-        height: 100vh;
-        width: 100%;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center; /* Vertically center content */
-        flex-direction: column; /* Stack content vertically */
-    }
-
-    .imagecontent {
-        width: 100%;
-        height: 61vh; /* Increase the height to make images larger */
-        position: relative;
-        overflow: hidden; /* Ensures any overflow is cropped */
-    }
 
 
 
-    .imagecontent .screws, 
-    .imagecontent .fire {
-     
-        width: 100%;
-        height: 100%; /* Fill the entire container */
-        object-fit:cover; /* Ensure the image covers the container while maintaining aspect ratio */
-        object-position: center -110px; /* Center the image within the container */
-        position: absolute; /* Ensure .fire overlaps properly */
-        top: 0;
-        left: 0;
       
 
     }
 
-    .first .h1text {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center the text horizontally */
-        z-index: 9;
-        font-size: 5vw; /* Make font size responsive based on screen width */
-        color: #EEE9E5;
-        position: relative; /* Relative positioning to avoid overlap issues */
-        margin-top: 2vh; /* Add margin to create spacing from the image */
-        text-align: center; /* Center align the text */
-        padding: 10px; /* Add padding to give the text some space */
-    }
-}
+  
