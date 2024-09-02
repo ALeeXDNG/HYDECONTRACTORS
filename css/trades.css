@@ -10,6 +10,16 @@ html {
   text-decoration: none;
   font-family: "Montserrat","Poppins", sans-serif;
 }
+
+.first{
+  height: 80vh;
+  background-image: url(../assets/video/Untitled\ design.mp4);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+
 h1{
   font-size: 20px;
   font-family: "Montserrat","Poppins", sans-serif;
@@ -24,30 +34,13 @@ h1{
   animation: popUp 1.5s ease-out forwards;
 }
 
-@keyframes popUp {
-  0% {
-      opacity: 0;
-      transform: scale(0.9);
-  }
-  100% {
-      opacity: 1;
-      transform: scale(1);
-  }
-}
 
 h1 span{
   color: #BC996F;
 }
 
 
-.first{
-    border-color: #fff;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
+
 .imagecontent{
     width: 100%;
     height: 70vh;
@@ -55,23 +48,8 @@ h1 span{
     margin-top: 7vh;
 
 }
-.imagecontent .screws {
 
-    z-index: 10;
-    width: 100%;
-    height: 70vh;
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
-    object-position: center; /* Centers the image within the container */
-    position: relative; /* or absolute, depending on the layout needs */
-  
-}
- .fire{
-    z-index: 8; /* lower z-index to appear behind .screws */
-    height: 70vh;
-    position: absolute; /* ensures it overlaps the .screws element */
-    top: 0;
-    left: 0;
-}
+
 
 .first .h1text{
     display: flex;
@@ -92,17 +70,6 @@ h1 span{
 
 
 
-.first{
-  height: 70vh;
-  background-image: url(../assets/video/Untitled\ design.mp4);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-
-
-
-
 
 
 
@@ -118,9 +85,10 @@ h1 span{
 
 .first{
   height: 70vh;
-  background-image: url(../assets/video/Untitled\ design.mp4);
+
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 25% 75%;;
 }
 
 
