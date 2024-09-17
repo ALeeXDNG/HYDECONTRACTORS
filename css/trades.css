@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -64,13 +65,93 @@ h1 span{
     
 }
 
+                                        /* second-section */
+
+.second-section{
+  color: #525252;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+h2{
+  padding-left: 20px;
+  color: white;
+  font-size: 6em;
+}
+.second-section p  {
+  color:#F6F6F6 ;
+}
+
+.drywall-description{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 9%;
+  margin-right: -20%;
+
+}
+
+.drywall-description p{
+  margin-top: 40px;
+  width: 60%;
+  text-align:end ;
+
+}
+.drywall-description p::first-line {
+  padding-left: 100px; /* This will not work on ::first-line */
+  color: #BC996F;
+  font-weight: bold; /* Example: make the first line bold */
+}
 
 
 
+.drywall-description .previous{
+
+  border: solid 1px #F6F6F6  ;
+  width: 20rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 40px;
+  
+
+ 
+}
+.drywall-description a{
+  color:#F6F6F6 ;
+  text-decoration: none;
+  padding: 30px;
+  width: 100%;
+ 
+}
 
 
 
+.drywall-description .previous :hover{
+  color:#000000 ;
+  background-color: #F6F6F6;
+  transition-duration: 0.5S ;
+ 
+}
 
+                                /* third section */
+.third-section{
+  color: #525252;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100vh;
+  background-image: url(../assets/Images/tape.png);
+ background-size: contain;
+  overflow: hidden;
+  width: 100%;
+
+}
 
 
 
@@ -81,25 +162,78 @@ h1 span{
 
 
 @media screen and (max-width: 1325px) {
+  .drywall-description p:first-child {
+   color: #F6F6F6; /* This will not work on ::first-line */
 
+  }
 
-.first{
-  height: 70vh;
+  .first {
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+  }
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 25% 75%;;
+.drywall-description p{
+  margin-top: 20px;
+  width: 100%;
+  text-align:start ;
+
 }
 
-
-
-
-
-
+h2{
+  font-size: 3em;
+  margin-left: 30px;
 }
+  .second-section {
+    display: flex;
+    flex-direction: row; /* Keep it row layout */
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Align elements to use the space evenly */
+    align-items: center;
+    width: 100%;
+  }
 
+  .second-section img {
+    scale: 1;
+    width: 40%; /* Adjust the image width to fit well on smaller screens */
+    height: auto; /* Maintain image proportions */
+  }
 
+  .drywall-description {
+    margin: 0;
 
+    width: 40%; /* Adjust the width to a smaller percentage to fit beside the image */
+
+    padding-right: 50px; /* Adjust padding for better fit */
+    padding-left: 80px; /* Add left padding for spacing */
+  }
+  .drywall-description .previous{
+
+    border: solid 1px #F6F6F6  ;
+    width: 15rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+  
+   
+  }
+  .drywall-description a{
+    color:#F6F6F6 ;
+    text-decoration: none;
+    padding: 15px;
+  
+   
+  }
+  
+  /* If the image with class 'plasteboard' is separate, target it directly */
+  .plasteboard {
+    width: 100%;
+    background-color: #fff;
+  }
+}
 
 
 
@@ -109,9 +243,47 @@ h1 span{
 
   @media screen and (max-width: 700px) {
 
+    .second-section img{
+      height: 60vh;
+      width: 120%;
+      scale: 1;
+  
+    }
+    .second-section{
+      flex-direction: column-reverse;
+    }
+
+    .drywall-description {
+      margin: 0;
+ 
+      width: 100%; /* Adjust the width to a smaller percentage to fit beside the image */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    .drywall-description p {
+      padding-left: 5%;
+      margin: 20px;
+  
+    }
+    h2{
+      margin: 20px;
+      font-size: 3em;
+      margin-left: 0px;
+      text-align: center;
+    }
+
+    .drywall-description .previous{
+      margin-left: 25%;
+      padding: 0;
+      margin: 20px;
+
+      }
 
 
-      
 
     }
 
