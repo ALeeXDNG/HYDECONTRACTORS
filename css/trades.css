@@ -93,6 +93,7 @@ h2{
   font-style: normal;
   margin-left: 9%;
   margin-right: -20%;
+  font-weight: 180;
 
 }
 
@@ -112,12 +113,13 @@ h2{
 
 .drywall-description .previous{
 
-  border: solid 1px #F6F6F6  ;
+  border: solid 0.5px #F6F6F6  ;
   width: 20rem;
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 40px;
+  
   
 
  
@@ -146,14 +148,25 @@ h2{
   flex-direction: row-reverse;
   align-items: center;
   height: 100vh;
-  background-image: url(../assets/Images/tape.png);
- background-size: contain;
+background-color: black;
   overflow: hidden;
   width: 100%;
 
 }
+ .ceiling {
+  width: 80%;
+  transform: scaleX(-1);
 
+}
+.ceilingsec .previous{
+margin-left: 40%;
+ 
+}
 
+.paintsec img {
+  transform: scaleX(-1);
+
+}
 
 
 
@@ -208,6 +221,11 @@ h2{
     padding-right: 50px; /* Adjust padding for better fit */
     padding-left: 80px; /* Add left padding for spacing */
   }
+
+  .drywall-description #ceiling{
+    background-color: #fff;
+  }
+
   .drywall-description .previous{
 
     border: solid 1px #F6F6F6  ;
@@ -233,40 +251,44 @@ h2{
     width: 100%;
     background-color: #fff;
   }
+
+
+
 }
 
 
 
 
-
-
-
   @media screen and (max-width: 700px) {
+    .second-section{
+      justify-content:center;
+      height: 120vh;
+ 
+    }
 
     .second-section img{
       height: 60vh;
       width: 120%;
       scale: 1;
+      background-color: black;
   
     }
     .second-section{
-      flex-direction: column-reverse;
+      flex-direction: column !important;
     }
 
     .drywall-description {
+      
       margin: 0;
- 
-      width: 100%; /* Adjust the width to a smaller percentage to fit beside the image */
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
       padding: 0;
-      margin: 0;
+      width: 80%; /* Adjust the width to a smaller percentage to fit beside the image */
+      display: flex;
+      align-items: end;
+      flex-direction: column;
+      align-items: end;
     }
     .drywall-description p {
-      padding-left: 5%;
-      margin: 20px;
+      text-align: end;
   
     }
     h2{
@@ -277,11 +299,20 @@ h2{
     }
 
     .drywall-description .previous{
-      margin-left: 25%;
-      padding: 0;
-      margin: 20px;
-
+      align-self: start;
+      margin: 50PX;
+      margin-left: 0;
+      margin-bottom: 0;
+      border: solid 0.3px #F6F6F6  ;
+      font-size: smaller;
+      padding: 1px;
+      width: 55%;
       }
+
+
+                   /* third section  ceilings */
+
+
 
 
 
