@@ -167,16 +167,21 @@ margin-left: 40%;
 
 .paintsec .second-section img {
   transform: scaleX(-1) !important;
-  width: 10%;
+  width: 50%;
+}
+
+
+.ceilingsec .second-section {
+flex-direction: row-reverse;
+
 }
 
 
 
 
-
-
-
 @media screen and (max-width: 1325px) {
+  
+
   .drywall-description p:first-child {
    color: #F6F6F6; /* This will not work on ::first-line */
 
@@ -201,6 +206,7 @@ h2{
   margin-left: 30px;
 }
   .second-section {
+    height: 60vh;
     display: flex;
     flex-direction: row; /* Keep it row layout */
     flex-wrap: nowrap;
@@ -211,8 +217,9 @@ h2{
 
   .second-section img {
     scale: 1;
-    width: 40%; /* Adjust the image width to fit well on smaller screens */
+    width: 50%; /* Adjust the image width to fit well on smaller screens */
     height: auto; /* Maintain image proportions */
+    min-width: 350px;
   }
 
   .drywall-description {
@@ -220,8 +227,9 @@ h2{
 
     width: 40%; /* Adjust the width to a smaller percentage to fit beside the image */
 
-    padding-right: 50px; /* Adjust padding for better fit */
-    padding-left: 80px; /* Add left padding for spacing */
+    padding-right: 20px; /* Adjust padding for better fit */
+    padding-left: 40px; /* Add left padding for spacing */
+     min-width: 460px;
   }
 
   .drywall-description #ceiling{
@@ -314,9 +322,31 @@ h2{
 
                    /* third section  ceilings */
 
+                   .ceilingsec .second-section {
+                    flex-direction: column;
+                    
+                    }
 
-
-
+                    .ceilingsec .second-section img {
+                      transform: scaleX(-1) !important;
+                      width: 100%;
+                    }
+                    .paintsec .second-section img {
+                      transform: scaleX(-1) !important;
+                      width: 100%;
+                      min-width:500px ;
+                    }
+                    .second-section img {
+                      margin-top: 50px;
+                      scale: 1;
+                      width: 100%; /* Adjust the image width to fit well on smaller screens */
+                      height: auto; /* Maintain image proportions */
+                      min-width: 260px;
+                    }
+                    .drywall-description {
+   
+                       min-width: 260px;
+                    }
 
     }
 
