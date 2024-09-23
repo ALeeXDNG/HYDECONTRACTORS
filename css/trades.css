@@ -26,6 +26,7 @@ h1{
   font-family: "Montserrat","Poppins", sans-serif;
   font-weight: 350;
   text-transform: uppercase;
+  z-index: 999;
 }
 
 .pop-up-text {
@@ -79,6 +80,7 @@ h1 span{
 }
 
 h2{
+  z-index: 999;
   padding-left: 20px;
   color: white;
   font-size: 6em;
@@ -165,6 +167,7 @@ margin-left: 40%;
 
 .paintsec img {
   transform: scaleX(-1);
+  width: 50%;
 
 }
 
