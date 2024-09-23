@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar */
+.nav-links {
+    margin-left: 11rem;
+    display: flex;
+    color: #f4f4f4;
+}
+.nav-links a {
+margin-top: 1rem;
+margin-left: 9rem;
+text-decoration: none;
+color: aliceblue;
+}
+
+
+.hero-section {
+
+    height: 45rem; /* Fixed height of the div */
+    background-image: url('/assets/testImages/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJjbGllbnQtdWtjYnZ6Nmxnc21ibXZ4ayJ9LCJwYXRoIjoicmFtYm9sbFwvZmlsZVwvWndHN3oxM3FTWmI5eTZ0N3dtdGsuanBnIn0_ramboll_7SCKOJQ3wNT-4dpQvtw0zqvZ39H6-LrEud2DESbK5ro.webp');
+    background-size: cover; /* or 'contain' based on your requirement */
+    background-repeat: no-repeat;
+    background-image: overlay;
+    background-position: 50%;
+
+}
+
+
+.hero-section p {
+    margin-top: 30rem;
+    background-color: rgba(4, 4, 4, 0.301);
+    padding: 5px;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+.hero-section p span{
+    font-size: medium;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004494;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.service-item {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0
+}
