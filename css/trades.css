@@ -165,7 +165,7 @@ margin-left: 40%;
  
 }
 
-.paintsec img {
+.paintsec .second-section img {
   transform: scaleX(-1) !important;
   width: 50%;
 }
