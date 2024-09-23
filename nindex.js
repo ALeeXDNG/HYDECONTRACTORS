@@ -1,3 +1,5 @@
+AOS.init();
+
 window.addEventListener('scroll', function() {
   const footer = document.querySelector('footer');
   const scrollY = window.scrollY;
