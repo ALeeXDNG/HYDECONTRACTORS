@@ -172,6 +172,7 @@ margin-left: 40%;
 
 
 .ceilingsec .second-section {
+  display: flex;
 flex-direction: row-reverse;
 
 }
@@ -273,6 +274,7 @@ h2{
     .second-section{
       justify-content:center;
       height: 120vh;
+      flex-direction: column !important;
  
     }
 
@@ -283,9 +285,7 @@ h2{
       background-color: black;
   
     }
-    .second-section{
-      flex-direction: column !important;
-    }
+
 
     .drywall-description {
       
