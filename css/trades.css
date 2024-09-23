@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 html {
   scroll-behavior: smooth;
@@ -155,7 +155,7 @@ background-color: black;
   width: 100%;
 
 }
- .ceiling {
+ .ceilingsec img {
   width: 80%;
   transform: scaleX(-1);
 
@@ -168,7 +168,7 @@ margin-left: 40%;
 .paintsec img {
   transform: scaleX(-1);
   width: 50%;
-
+  background-color: red;
 }
 
 
