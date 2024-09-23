@@ -1,6 +1,6 @@
 header {
     height: 25vh;
-    background: rgb(255, 255, 255);
+    background: #E0E0E0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,6 +41,7 @@ header {
   }
   
   .navigation-menu {
+
     float: right;
     display: flex;
     align-items: center;
@@ -222,6 +223,7 @@ header {
       margin-right: 8%;
     }
     .navigation-menu.active {
+      background: #E0E0E0;
         display: flex; /* Make it visible */
         flex-direction: column;
         gap: 0;
