@@ -155,8 +155,8 @@ background-color: black;
   width: 100%;
 
 }
- .ceilingsec img {
-  width: 80%;
+ .ceilingsec .second-section img {
+  width: 70%;
   transform: scaleX(-1);
 
 }
